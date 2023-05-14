@@ -40,6 +40,9 @@
             pictureBox9 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox11 = new PictureBox();
+            loginControl1 = new WinFormsApp1.LoginControl();
+            registerControl1 = new RegisterControl();
+            dashBoardControl1 = new DashBoardControl();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -174,11 +177,41 @@
             pictureBox11.TabIndex = 11;
             pictureBox11.TabStop = false;
             // 
+            // loginControl1
+            // 
+            loginControl1.BackColor = Color.White;
+            loginControl1.ForeColor = Color.FromArgb(255, 224, 192);
+            loginControl1.Location = new Point(0, 0);
+            loginControl1.Name = "loginControl1";
+            loginControl1.Size = new Size(317, 443);
+            loginControl1.TabIndex = 12;
+            // 
+            // registerControl1
+            // 
+            registerControl1.BackColor = Color.FromArgb(255, 192, 255);
+            registerControl1.Location = new Point(0, 0);
+            registerControl1.Name = "registerControl1";
+            registerControl1.Size = new Size(364, 473);
+            registerControl1.TabIndex = 13;
+            registerControl1.UseWaitCursor = true;
+            // 
+            // dashBoardControl1
+            // 
+            dashBoardControl1.BackColor = Color.White;
+            dashBoardControl1.BackgroundImageLayout = ImageLayout.Stretch;
+            dashBoardControl1.Location = new Point(0, 0);
+            dashBoardControl1.Name = "dashBoardControl1";
+            dashBoardControl1.Size = new Size(954, 499);
+            dashBoardControl1.TabIndex = 14;
+            // 
             // MenItemControl
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(dashBoardControl1);
+            Controls.Add(registerControl1);
+            Controls.Add(loginControl1);
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
             Controls.Add(pictureBox9);
@@ -222,5 +255,8 @@
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
+        private WinFormsApp1.LoginControl loginControl1;
+        private RegisterControl registerControl1;
+        private DashBoardControl dashBoardControl1;
     }
 }

@@ -16,5 +16,10 @@ namespace WinFormsApp2
         {
             InitializeComponent();
         }
+
+        private void LadiesControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
